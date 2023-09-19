@@ -2,198 +2,241 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - Pedro SH</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Font Awesome CDN  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-          crossorigin="anonymous"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio - Pedro SH </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Portfolio Website</title>
 </head>
-
 <body>
-<nav id="navbar" class="navbar"><a href="#"></a></nav>
-
-<div class="container">
-    <!--=============== NAVIGATION MENU ===============-->
-    <div class="menu">
-        <a href="#welcome-section" class="menu-icon fas fa-home"></a>
-        <a href="#about" class="menu-icon fas fa-user"></a>
-        <a href="#experiencia" class="menu-icon fas fa-code"></a>
-        <a href="#educacion" class="menu-icon fas fa-briefcase"></a>
-<!--        <a href="#contact" class="menu-icon fas fa-envelope"></a>-->
-    </div>
-    <!--=============== MAIN "WINDOW" ===============-->
-    <div class="portfolio">
-        <!--=============== HEADER SECTION ===============-->
-        <section class="header">
-            <img class="header-img"
-                 src="https://media.licdn.com/dms/image/D5603AQHgVGL4lflhlA/profile-displayphoto-shrink_200_200/0/1680226942413?e=1687392000&v=beta&t=-Njb9mG4umwqeOqqo-Ea_ml4kUjYwb-dPVCRcOsn_vg"
-                 alt=""/>
-            <h1>Pedro SH</h1>
-            <h2>Backend Developer</h2>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/pedro172023" target="_blank" class="fab fa-linkedin-in" id="profile-link"></a>
-                <a href="https://github.com/pedro172023" target="_blank" class="fab fa-github"></a>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">PSH</p>
+                <span>.</span>
             </div>
-            <a href="https://hireline.io/candidate/show/cv/52e75c00-f0a6-4f7d-b39b-6db0d6053be0/24" target="_blank" class="cta">Download CV</a>
-        </section>
-        <!--=============== CONTENT SECTION ===============-->
-        <div class="content">
-            <!--=============== HOME ===============-->
-            <section class="content-card home" id="welcome-section">
-                <h1>Hola, Mi nombre es Pedro Sánchez</h1>
-            </section>
-            <!--=============== ABOUT ME ===============-->
-            <section class="content-card about" id="about">
-                <h1>ACERCA DE MI:</h1>
-                <div class="about-item about-me">
-                    <p>
-                        Soy un programador apasionado por el desarrollo de aplicaciones en Python, JavaScript y tecnologías móviles con el Framework de Ionic.
-                        He realizado implementaciones de plataformas para universidades, así como creación de módulos para Odoo en sus diferentes versiones.
-                        Mi experiencia y habilidades técnicas me permiten crear soluciones innovadoras y eficientes para satisfacer las necesidades de los clientes.
-                        Siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer en mi carrera como desarrollador.
-                    </p>
-                </div>
-                <div class="col-2">
-                    <div class="about-item skills">
-                        <h1>Skills</h1>
-                        <span class="skill">HTML</span>
-                        <span class="skill">CSS</span>
-                        <span class="skill">JavaScript</span>
-                        <span class="skill">SQL</span>
-                        <span class="skill">Git</span>
-                        <span class="skill">Python</span>
-                        <span class="skill">Odoo</span>
-                        <span class="skill">Ionic</span>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Pedro Sanchez</span>
                     </div>
-                    <div class="about-item languages">
-                        <h1>Idiomas</h1>
-                        <div class="language">
-                            <p>Español</p>
-                            <span class="bar"><span class="polish"></span></span>
-                        </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
                     </div>
-                </div>
-            </section>
-            <!--=============== PROJECTS ===============-->
-            <section class="content-card projects" id="experiencia">
-                <h1>EXPERIENCIA</h1>
-                <div class="timeline">
-                    <div class="timeline-items">
-                        <div class="timeline-item">
-                            <div class="timeline-date">Diciembre 2018 - Actualidad</div>
-                            <div class="timeline-content">
-                                <h3>OOHEL TECHNOLOGIES - Consultor, Desarrollador de software</h3>
-                                <p>Implementacion y desarrollo de diferentes módulos en Odoo para empresas y
-universidades, desarrollo de aplicaciones móviles para empresas y para la plataforma
-Oohel Planner</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">Enero 2020 - Agosto 2022</div>
-                            <div class="timeline-content">
-                                <h3>OOHEL TECHNOLOGIES - Consultor de implementación de software</h3>
-                                <p>Líder en la implementación de Oohel EdRP echa con Odoo en las universidades como
-la Tecnológica de Nuevo Laredo y la Tecnológica del Norte de Coahuila
-Consultor en la Implementación de Oohel EdRP echa con Odoo para las Universidades
-como la Tecnológica de Matamoros y Tecnológica de Chihuahua Sur</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">Noviembre 2020 - Febrero 2021 </div>
-                            <div class="timeline-content">
-                                <h3>OOHEL TECHNOLOGIES - Desarrollador de aplicaciones para móviles</h3>
-                                <p>Líder en el proyecto de desarrollo de la aplicación Después de Covid para la
-institución APAC, la app está disponible para iOS y PWA</p>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">Enero 2019 - Marzo 2019</div>
-                            <div class="timeline-content">
-                                <h3>OOHEL TECHNOLOGIES - Desarrollador de aplicaciones para móviles</h3>
-                                <p>Líder en el proyecto de desarrollo de la aplicación Atención es Prevención para la
-institución APAC, la app está disponible para iOS y Android</p>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-date">Julio 2018 - Noviembre 2019 </div>
-                            <div class="timeline-content">
-                                <h3>OOHEL TECHNOLOGIES - Desarrollador de software</h3>
-                                <p>Desarrollo e implementación de módulos y aplicación móviles de alumnos de la
-plataforma Oohel EdRP para la Universidad Politécnica de Puebla</p>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        
+                    <div class="featured-text-info">
+                        <p>Experienced frontend developer with a passion for creating visually stunning
+                            and user-friendly websites.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn blue-btn">Hire Me</button>
+                        <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon"><i class="uil uil-instagram"></i></div>
+                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                        <div class="icon"><i class="uil uil-twitter"></i></div>
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
                     </div>
                 </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img style="border-radius: 500px"
+                                src="https://avatars.githubusercontent.com/u/29467839?s=400&u=cb7b2599aa00168ec5f3f3c26012d719b2b2885d&v=4" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
             </section>
-            <!--=============== EXPERIENCE ===============-->
-            <section class="content-card experience" id="educacion">
-                <h1>EDUCACIÓN</h1>
-                <div class="timeline">
-                    <div class="timeline-items">
-                        <div class="timeline-item">
-                            <div class="timeline-date">Agosto 2014 - Diciembre 2018</div>
-                            <div class="timeline-content">
-                                <h3>INSTITUTO TECNOLÓGICO DE TLAXIACO</h3>
-                                <p>
-                                Estudiante y egresado de la carrera en de Ing. en Sistemas Computacionales, cursando
-                                materias como: Gestión y administración de bases de datos, Ingeniería de Software,
-                                Programación Web, Administración de redes.
-                                Responsable del Club de programación    
-                                </p>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>My introduction</h3>
+                            <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
+                                frameworks and libraries,which allows me to implement interactive features.
+                                Additionally, I have experirence working with content management systems (CMS) like
+                                WordPress.
+                            </p>
+                            <div class="about-btn">
+                                <button class="btn">Download CV <i class="uil uil-import"></i></button>
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>Vue</span>
+                                <span>React</span>
+                                <span>Angular</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Backend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>PHP</span>
+                                <span>JAVA</span>
+                                <span>Python</span>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>PostgreSQL</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <!--=============== CONTACT ===============-->
-<!--            <section class="content-card contact" id="contact">-->
-<!--                <h1>Contact</h1>-->
-<!--                <form class="form" id="form" action="https://www.freecodecamp.com/email-submit">-->
-<!--                    <div class="input-box">-->
-<!--                        <input type="text" class="text-input" name="name" placeholder="Name"/>-->
-<!--                    </div>-->
-<!--                    <div class="input-box">-->
-<!--                        <input type="email" class="text-input" name="email" id="email" placeholder="Email"/>-->
-<!--                    </div>-->
-<!--                    <div class="input-box">-->
-<!--                        <input type="subject" class="text-input" name="subject" id="subject"-->
-<!--                               placeholder="Subject"/>-->
-<!--                    </div>-->
-<!--                    <div class="input-box">-->
-<!--                        <textarea name="text" class="message" placeholder="Message..."></textarea>-->
-<!--                    </div>-->
-<!--                    <div class="input-box">-->
-<!--                        <input type="submit" class="submit-btn" id="submit" value="submit"/>-->
-<!--                    </div>-->
-<!--                </form>-->
-<!--            </section>-->
-        </div>
+            <!-- -------------- PROJECT BOX ---------------- -->
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Completed</h3>
+                        <label>15+ Finished Projects</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Clients</h3>
+                        <label>25+ Happy Clients</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-award"></i>
+                        <h3>Experience</h3>
+                        <label>7+ Years in the field</label>
+                    </div>
+                </div>
+            </section>
+            <!-- -------------- CONTACT BOX ---------------- -->
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                    <span>Do you have a project in your mind, contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: pedro.sh.dev@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> 2221945508</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Name">
+                                <input type="text" class="input-field" placeholder="Email">
+                            </div>
+                            <div class="text-area">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Send <i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Pedro Sanchez .</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-twitter"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright © <a href="#home" style="text-decoration: none;">Pedro Sanchez</a> - All rights reserved
+                </p>
+            </div>
+        </footer>
     </div>
-</div>
-<script src="script.js"></script>
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="script.js"></script>
 </body>
-</html>
-</body>
+
 </html>
