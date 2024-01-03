@@ -28,7 +28,10 @@ function headerShadow() {
     navHeader.style.lineHeight = "90px";
 
   }
-}
+
+function download_cv() {
+  window.open('https://drive.google.com/uc?export=download&id=1BPfGVyeP8AYvroW4Jf2PxgkSpyEfujEj', '_self');
+  }
 
 /* ----- TYPING EFFECT ----- */
 let typingEffect = new Typed(".typedText",{
