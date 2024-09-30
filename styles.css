@@ -855,7 +855,7 @@ footer {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* Espacio entre habilidades */
+    /*gap: 15px; !* Espacio entre habilidades *!*/
 }
 
 .skills-list li {
