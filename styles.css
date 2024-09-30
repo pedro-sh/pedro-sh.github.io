@@ -444,6 +444,7 @@ h3{
 .contact-info:hover.contact-info i{
     /*color: #777;*/
     /*z-index: 2;*/
+    color: black;
 }
 
 /* ----- CONTACT FORM ----- */
