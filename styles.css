@@ -647,6 +647,7 @@ footer{
 }
 
 
+/* ----- ABOUT SECTION IMPROVEMENTS ----- */
 #about .section {
     background-color: var(--color-white);
     border-radius: 15px;
@@ -677,38 +678,31 @@ footer{
     list-style: disc;
 }
 
-/* ----- TIMELINE STYLING FOR EXPERIENCE ----- */
+/* ----- TIMELINE TO CARDS ----- */
 #about .timeline {
-    position: relative;
-    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 #about .timeline-item {
-    position: relative;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-left: 2px solid var(--first-color);
+    background-color: var(--body-color);
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Ajusta las tarjetas en dos columnas */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+#about .timeline-item:hover {
+    transform: translateY(-5px);
 }
 
 #about .timeline-item h4 {
     font-weight: 600;
     color: var(--text-color-third);
-}
-
-#about .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -10px;
-    top: 0;
-    width: 15px;
-    height: 15px;
-    background-color: var(--first-color);
-    border-radius: 50%;
-}
-
-#about .timeline-item ul {
-    list-style: disc;
-    padding-left: 20px;
+    margin-bottom: 15px;
 }
 
 #about .timeline-item p {
@@ -717,29 +711,40 @@ footer{
 }
 
 /* ----- SKILLS SECTION IMPROVEMENTS ----- */
+#about .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 #about .skills-list li {
     display: inline-block;
     background-color: var(--third-color);
     color: var(--color-white);
-    padding: 8px 12px;
-    margin: 5px;
+    padding: 10px 15px;
     border-radius: 5px;
     font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
-#about .skills-header {
-    margin-bottom: 30px;
-    font-size: 18px;
-    color: var(--text-color-second);
+#about .skills-list li:hover {
+    background-color: var(--first-color);
 }
 
 /* ----- EDUCATION SECTION IMPROVEMENTS ----- */
+#about .education {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 #about .education-item {
     background-color: var(--body-color);
     border-left: 4px solid var(--first-color);
     padding: 20px;
-    margin-bottom: 20px;
+    width: calc(50% - 20px); /* Ajusta las tarjetas en dos columnas */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 #about .education-item h4 {
