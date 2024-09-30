@@ -6,7 +6,7 @@ function download_cv() {
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(function() {
-        alert('Copiado al portapapeles: ' + text);
+        // alert('Copiado al portapapeles: ' + text);
     }, function(err) {
         console.error('Error al copiar: ', err);
     });
