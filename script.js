@@ -4,6 +4,13 @@ function download_cv() {
   window.open('https://drive.google.com/uc?export=download&id=1DTu5DWO-Bm8suKS87e1EgSTiQuVXAUxl', '_self');
 }
 
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+        alert('Copiado al portapapeles: ' + text);
+    }, function(err) {
+        console.error('Error al copiar: ', err);
+    });
+}
 
 function myMenuFunction(){
   let menuBtn = document.getElementById("myNavMenu");

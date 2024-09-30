@@ -634,3 +634,15 @@ footer{
         width: 100%;
     }
 }
+
+.copy-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.copy-btn:hover {
+    background-color: #e0e0e0;
+}
