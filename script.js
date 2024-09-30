@@ -1,7 +1,7 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
 
 function download_cv() {
-  window.open('https://drive.google.com/uc?export=download&id=1BPfGVyeP8AYvroW4Jf2PxgkSpyEfujEj', '_self');
+  window.open('https://drive.google.com/uc?export=download&id=1DTu5DWO-Bm8suKS87e1EgSTiQuVXAUxl', '_self');
 }
 
 
@@ -38,7 +38,7 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 let typingEffect = new Typed(".typedText",{
-  strings : ["Desarrollador", "Creador de soluciones","Constructor de aplicaciones", "Innovador tecnológico"],
+  strings : ["Desarrollador", "Creador", "Innovador"],
   loop : true,
   typeSpeed : 100,
   backSpeed : 80,
